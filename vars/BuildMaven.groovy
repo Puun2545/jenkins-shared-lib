@@ -1,5 +1,5 @@
 def call(String mavenVersion, String goals = 'clean package') {
-    com.mycompany.maven.MavenBuilder.build(this, mavenVersion, goals)
+    com.library.MavenBuilder.build(this, mavenVersion, goals)
 }
 
 
