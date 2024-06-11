@@ -1,3 +1,3 @@
 def call(String word) {
-    echo com.library.Hello()
+    echo com.library.Hello.sayHello()
 }

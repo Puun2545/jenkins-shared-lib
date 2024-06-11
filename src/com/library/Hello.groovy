@@ -1,5 +1,7 @@
 package com.library
 
 class Hello() {
-    return "Hello, World! form library!"
+    static def sayHello() {
+        return "Hello, World! form library!"
+    }
 }
