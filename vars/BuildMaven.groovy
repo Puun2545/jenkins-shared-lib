@@ -1,4 +1,4 @@
-def call(String mavenVersion, String goals = 'clean package') {
+def call(String mavenVersion) {
     echo "Building with Maven version ${mavenVersion}"
-    com.library.MavenBuilder.build(this, mavenVersion, goals)
+    com.library.MavenBuilder.build(this, mavenVersion, 'clean package')
 }
