@@ -1,8 +1,9 @@
-package com.mycompany.maven
+package com.library
 
 class MavenBuilder {
-    static def build(script, String mavenGoals, String mavenOpts = '') {
-        script.sh "mvn ${mavenOpts} ${mavenGoals}"
+    static def build(script, String mavenVersion, String goals = 'clean package') {
+        script.sh "${script.env.MAVEN_HOME}/bin/mvn ${goals} -Dproject.version=${mavenVersion}"
     }
 }
+
 
