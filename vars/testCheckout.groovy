@@ -7,14 +7,5 @@ def call(Map params) {
     def credentialsId = params.credentialsId
 
     // Checkout โค้ดจาก Git repository โดยใช้พารามิเตอร์ที่ระบุ
-    pipeline {
-        agent any
-        stages {
-            stage('Checkout') {
-                steps {
-                    git branch: branch, credentialsId: credentialsId, url: url
-                }
-            }
-        }
-    }
+    git branch: branch, credentialsId: credentialsId, url: url
 }
