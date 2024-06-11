@@ -1,5 +1,5 @@
 package com.library
 
-class Hello(word) {
-    return "Hello, World! form library! ${word}"
+class Hello() {
+    return "Hello, World! form library!"
 }
